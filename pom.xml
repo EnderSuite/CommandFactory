@@ -8,8 +8,26 @@
     <artifactId>commandfactory</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- DISTRIBUTED MANAGEMENT -->
+    <distributionManagement>
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <!-- REPOS -->
     <repositories>
+
+        <!-- GitLab -->
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+        </repository>
 
         <!-- Spigot -->
         <repository>
