@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 
@@ -24,6 +25,7 @@ public class Command {
 
     // Settings
     private String name;
+    private List<String> requiredPermissions;
 
 
 
@@ -36,6 +38,7 @@ public class Command {
     public Command(String name) {
         setTokens(new ArrayList<CommandToken>());
         setName(name);
+        setRequiredPermissions(new ArrayList<String>());
     }
 
 
@@ -67,11 +70,55 @@ public class Command {
         return String.join(" ", parts);
     }
 
+    /*
+     * Adds a permission to the required permissions.
+     */
+    public Command addRequiredPermission(String permission) {
+        getRequiredPermissions().add(permission);
+        return this;
+    }
 
 
 
+    // ================================     CUSTOM LOGIC
+
+
+    /*
+     * Custom logic for when a player calls the cmd.
+     */
+    public void _onPlayerCall(Player sender, Map<String, CommandArg> args) {
+
+        // RET: No perms needed.
+        if (getRequiredPermissions().size() <= 0) onPlayerCall(sender, args);
+
+
+        // Check perms.
+        for (String permission : getRequiredPermissions()) {
+            if (!sender.hasPermission(permission)) {
+                onNoPermission(sender, permission);
+                return;
+            }
+        }
+
+        // Continue.
+        onPlayerCall(sender, args);
+
+
+    }
     public void onPlayerCall(Player sender, Map<String, CommandArg> args) {}
+
+
+    /*
+     * Custom logic for when the console calls the cmd.
+     */
     public void onConsoleCall(CommandSender sender, Map<String, CommandArg> args) {}
+
+
+    /*
+     * Custom logic for when the sender does not have the necessary permission.
+     * ! Only applicable for players !
+     */
+    public void onNoPermission(Player sender, String permission) {}
 
 
 }

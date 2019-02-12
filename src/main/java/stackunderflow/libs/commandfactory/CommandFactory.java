@@ -152,7 +152,7 @@ public class CommandFactory implements CommandExecutor {
             if (execute) {
 
                 if (sender instanceof Player) {
-                    command.onPlayerCall((Player) sender, commandArgMap);
+                    command._onPlayerCall((Player) sender, commandArgMap);
                 }
                 else {
                     command.onConsoleCall(sender, commandArgMap);
