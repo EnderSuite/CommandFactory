@@ -89,7 +89,7 @@ public class Command {
     public void _onPlayerCall(Player sender, Map<String, CommandArg> args) {
 
         // RET: No perms needed.
-        if (getRequiredPermissions().size() <= 0) onPlayerCall(sender, args);
+        if (getRequiredPermissions().size() <= 0) { onPlayerCall(sender, args); return; };
 
 
         // Check perms.
