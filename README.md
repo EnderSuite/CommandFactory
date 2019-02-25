@@ -10,6 +10,8 @@ by a WHOLE lot! It creates an Object Oriented interface which makes creating man
 At the same time, it abstracts the given arguments by applying a "Regex a-like" pattern matcher, 
 to extract required and optional arguments.
 
+**Spigot Resource Page: ** (https://www.spigotmc.org/resources/commandfactory-1-8-1-13-replace-nasty-oncommand-methods-with-clean-code.64801/)[https://www.spigotmc.org/resources/commandfactory-1-8-1-13-replace-nasty-oncommand-methods-with-clean-code.64801/]
+
 
 # Installation
 
