@@ -23,10 +23,10 @@ from the Spigot page and adding it as a dependency, or use Maven (I would recomm
 ```xml
 <repositories>
     ...
-    <!-- CommandFactory -->
+    <!-- StackUnderflow REPO -->
     <repository>
-        <id>commandfactory-repo</id>
-        <url>https://gitlab.com/api/v4/projects/10789536/packages/maven</url>
+        <id>stackunderflow-public</id>
+        <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public/</url>
     </repository>
     ...
 </repositories>

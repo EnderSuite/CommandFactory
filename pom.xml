@@ -6,27 +6,27 @@
 
     <groupId>stackunderflow.libs</groupId>
     <artifactId>commandfactory</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
 
     <!-- DISTRIBUTED MANAGEMENT -->
     <distributionManagement>
         <repository>
-            <id>gitlab-maven</id>
-            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+            <id>stackunderflow-public-releases</id>
+            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>gitlab-maven</id>
-            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+            <id>stackunderflow-public-snapshots</id>
+            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
     <!-- REPOS -->
     <repositories>
 
-        <!-- GitLab -->
+        <!-- StackUnderflow -->
         <repository>
-            <id>gitlab-maven</id>
-            <url>https://gitlab.com/api/v4/projects/10797606/packages/maven</url>
+            <id>stackunderflow-public</id>
+            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public/</url>
         </repository>
 
         <!-- Spigot -->
