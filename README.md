@@ -17,10 +17,10 @@ to extract required and optional arguments.
 from the Spigot page and adding it as a dependency, or use Maven (I would recommend this). Also, make sure that the dependency gets included in your final plugin JAR!**
 
 **If you imported the library, you can follow the tutorial below the code.**
-**!! Make sure that the version inside of "<version></version>" is the latest one !!**
 
 
 *For maven users (add the following snippets into your pom.xml):*
+*!! Make sure that the version inside of `<version></version>` is the latest one !!*
 ```xml
 <repositories>
     ...
