@@ -37,7 +37,7 @@ from the Spigot page and adding it as a dependency, or use Maven (I would recomm
     <dependency>
         <groupId>stackunderflow.libs</groupId>
         <artifactId>commandfactory</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1-SNAPSHOT</version>
     </dependency>
     ...
 </dependencies>
