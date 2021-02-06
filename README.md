@@ -32,7 +32,7 @@
     <a href="https://github.com/EnderSuite/CommandFactory/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.spigotmc.org/resources/endersync-1-8-1-13-sync-playerdata-between-servers-inventory-health-xp.64344/">SpigotMC Page</a>
+    <a href="https://www.spigotmc.org/resources/commandfactory-1-8-1-16-replace-nasty-oncommand-methods-with-clean-code.64801/">SpigotMC Page</a>
     ·
     <a href="https://github.com/EnderSuite/CommandFactory/issues">Report Bug</a>
     ·
