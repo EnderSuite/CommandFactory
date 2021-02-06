@@ -1,3 +1,6 @@
-.idea/*
-.idea
-dependency-reduced-pom.xml
+# Tooling
+.idea/
+*.iml
+
+# Build
+target/
