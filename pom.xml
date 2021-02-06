@@ -4,30 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>stackunderflow.libs</groupId>
+    <groupId>endersuite.libs</groupId>
     <artifactId>commandfactory</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
 
-    <!-- DISTRIBUTED MANAGEMENT -->
-    <distributionManagement>
-        <repository>
-            <id>stackunderflow-public-releases</id>
-            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>stackunderflow-public-snapshots</id>
-            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <!-- REPOS -->
     <repositories>
-
-        <!-- StackUnderflow -->
-        <repository>
-            <id>stackunderflow-public</id>
-            <url>https://repo.maximilian-heidenreich.de/repository/stackunderflow-public/</url>
-        </repository>
 
         <!-- Spigot -->
         <repository>
@@ -51,7 +34,7 @@
         <!-- Spigot 1.8.8 -->
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
+            <artifactId>spigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>

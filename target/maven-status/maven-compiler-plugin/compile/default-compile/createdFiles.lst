@@ -1,5 +1,5 @@
-stackunderflow/libs/commandfactory/CommandToken.class
-stackunderflow/libs/commandfactory/CommandArg.class
-stackunderflow/libs/commandfactory/Command.class
-stackunderflow/libs/commandfactory/CommandFactory.class
-stackunderflow/libs/commandfactory/CommandTokenType.class
+endersuite/libs/commandfactory/CommandArg.class
+endersuite/libs/commandfactory/Command.class
+endersuite/libs/commandfactory/CommandFactory.class
+endersuite/libs/commandfactory/CommandTokenType.class
+endersuite/libs/commandfactory/CommandToken.class

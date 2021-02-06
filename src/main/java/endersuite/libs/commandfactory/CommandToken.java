@@ -1,4 +1,4 @@
-package stackunderflow.libs.commandfactory;
+package endersuite.libs.commandfactory;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,10 +22,6 @@ public class CommandToken {
     private String alias;
 
     // State
-
-
-
-
 
 
 
